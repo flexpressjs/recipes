@@ -1,0 +1,9 @@
+{
+    "copy": {
+        "index.js": "index.js",
+        "kernel.js": "kernel.js",
+        "modules.js": "modules.js",
+        "config/app.js": "config/app.js",
+        "packages/.gitignore": "packages/.gitignore"
+    }
+}
