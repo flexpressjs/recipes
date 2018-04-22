@@ -1,9 +1,13 @@
 {
+    "gitignore": [
+        "node_modules",
+        "yarn-error.log"
+    ],
     "copy": {
-        "index.js": "index.js",
-        "kernel.js": "kernel.js",
-        "modules.js": "modules.js",
         "config/app.js": "config/app.js",
-        "packages/.gitignore": "packages/.gitignore"
+        "config/dev/app.js": "config/dev/app.js",
+        "config/prod/app.js": "config/prod/app.js",
+        "packages/.gitignore": "packages/.gitignore",
+        "src/app.js": "src/app.js"
     }
 }

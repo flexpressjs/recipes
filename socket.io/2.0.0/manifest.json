@@ -1,6 +1,6 @@
 {
-    "configurator": "socket.io.js",
     "copy": {
+        "packages/socket.io.js": "packages/socket.io.js",
         "config/socket.io.js": "config/socket.io.js"
     }
 }
