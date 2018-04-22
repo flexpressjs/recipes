@@ -4,5 +4,6 @@
         "config/express.js": "config/express.js",
         "packages/express.js": "packages/express.js",
         "src/controllers/welcome.js": "src/controllers/welcome.js"
-    }
+    },
+    "postInstallOutput": "post-install-output.txt"
 }

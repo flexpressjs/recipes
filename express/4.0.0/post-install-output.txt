@@ -1,0 +1,10 @@
+
+ What's next?
+
+  * Run your application:
+    1. Execute the following command: node index.js
+
+    2. Browse to the http://localhost:3000/ URL. Your application is working!
+       Quit the server with CTRL-C.
+
+  * Read the documentation at https://github.com/flexpressjs/flexpress
