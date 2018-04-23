@@ -2,5 +2,6 @@
     "copy": {
         "packages/socket.io.js": "packages/socket.io.js",
         "config/socket.io.js": "config/socket.io.js"
-    }
+    },
+    "postInstallOutput": "post-install-output.txt"
 }
