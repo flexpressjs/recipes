@@ -1,0 +1,6 @@
+{
+    "copy": {
+        "config/cors.js": "config/cors.js",
+        "packages/cors.js": "packages/cors.js"
+    }
+}
