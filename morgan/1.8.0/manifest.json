@@ -1,0 +1,10 @@
+{
+    "gitignore": [
+        "logs/*",
+        "!logs/.gitignore"
+    ],
+    "copy": {
+        "packages/dev/morgan.js": "packages/dev/morgan.js",
+        "packages/prod/morgan.js": "packages/prod/morgan.js"
+    }
+}

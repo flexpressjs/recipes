@@ -1,12 +1,20 @@
 const express = require('express');
 const http = require('http');
 
-module.exports = (app) => {
-    app.set('express', () => {
-        return express();
-    });
+module.exports = {
+    configure: (app) => {
+        app.set('express', () => {
+            return express();
+        });
 
-    app.set('server', () => {
-        return http.Server(app.get('express'));
-    });
+        app.set('server', () => {
+            return http.Server(app.get('express'));
+        });
+    },
+
+    boot: (app) => {
+        app.get('express').use(express.json());
+        app.get('express').use(express.urlencoded({ extended: false }));
+        app.get('express').use(express.static(path.join(__dirname, 'public')));
+    },
 };

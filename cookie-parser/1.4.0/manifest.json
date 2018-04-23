@@ -1,0 +1,5 @@
+{
+    "copy": {
+        "packages/cookie-parser.js": "packages/cookie-parser.js"
+    }
+}

@@ -1,14 +1,16 @@
-const fs = require('fs')
+const fs = require('fs');
+const path = require('path');
 
 class App {
     constructor(env) {
         this.env = env;
+        this.rootDir = path.dirname(__dirname);
         this._booted = false;
 
-        this._configPath = __dirname+'/../config';
+        this._configPath = this.rootDir+'/config';
         this.config = {};
 
-        this._packagesPath = __dirname+'/../packages';
+        this._packagesPath = this.rootDir+'/packages';
         this._modules = [];
 
         this._definitions = {};
@@ -35,7 +37,8 @@ class App {
             this._loadModuleDirectory(this._packagesPath+'/'+this.env);
         }
 
-        this._modules.forEach(applyModule => applyModule(this));
+        this._modules.forEach(module => typeof module.configure !== 'undefined' && module.configure(this));
+        this._modules.forEach(module => typeof module.boot !== 'undefined' && module.boot(this));
     }
 
     set(serviceName, factory) {

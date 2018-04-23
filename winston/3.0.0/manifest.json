@@ -1,0 +1,12 @@
+{
+    "gitignore": [
+        "logs/*",
+        "!logs/.gitignore"
+    ],
+    "copy": {
+        "logs/.gitignore": "logs/.gitignore",
+        "packages/dev/logger.js": "packages/dev/logger.js",
+        "packages/logger.js": "packages/morgan.js"
+    },
+    "postInstallOutput": "post-install-output.txt"
+}

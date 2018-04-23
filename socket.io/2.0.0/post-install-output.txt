@@ -1,0 +1,11 @@
+
+ You just installed socket.io!
+ What's next?
+
+  * In your index.js file, just before the server listening, add the following lines:
+
+app.get('io').on('connection', (socket) => {
+    // Implement your logic here
+});
+
+  * Read the documentation of socket.io on https://socket.io/docs/.

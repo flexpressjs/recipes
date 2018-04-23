@@ -1,0 +1,8 @@
+
+ You just installed winstonjs, a logger.
+ You can now use it in your application:
+
+app.get('logger').log({
+    level: 'info',
+    message: 'An interesting action happened in your application',
+});

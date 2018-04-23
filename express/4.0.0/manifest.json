@@ -1,9 +1,10 @@
 {
     "copy": {
-        "index.js": "index.js",
         "config/express.js": "config/express.js",
         "packages/express.js": "packages/express.js",
-        "src/controllers/welcome.js": "src/controllers/welcome.js"
+        "public/.gitignore": "public/.gitignore",
+        "src/routes/welcome.js": "src/routes/welcome.js",
+        "index.js": "index.js"
     },
     "postInstallOutput": "post-install-output.txt"
 }

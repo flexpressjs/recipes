@@ -1,4 +1,5 @@
 
+ You just installed express with Flexpress!
  What's next?
 
   * Run your application:
@@ -7,4 +8,4 @@
     2. Browse to the http://localhost:3000/ URL. Your application is working!
        Quit the server with CTRL-C.
 
-  * Read the documentation at https://github.com/flexpressjs/flexpress
+  * Read the documentation on https://github.com/flexpressjs/flexpress
