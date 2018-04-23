@@ -2,10 +2,10 @@
  You just installed socket.io!
  What's next?
 
-  * In your index.js file, just before the server listening, add the following lines:
+  * In your index.js file or in your routes, you can use socket.io:
 
-app.get('io').on('connection', (socket) => {
-    // Implement your logic here
-});
+        app.get('io').on('connection', (socket) => {
+            // Implement your logic here
+        });
 
-  * Read the documentation of socket.io on https://socket.io/docs/.
+  * Learn more about socket.io on https://socket.io/docs/.

@@ -1,0 +1,7 @@
+{
+    "copy": {
+        "config/passport.js": "config/passport.js",
+        "packages/passport.js": "packages/passport.js"
+    },
+    "postInstallOutput": "post-install-output.txt"
+}

@@ -1,0 +1,13 @@
+
+ You just installed Passport!
+ What's next?
+
+   * In packages/passport.js, you will find more instructions about what you need to tweak for Passport to
+     work in your application.
+
+   * If you are not building an API, you are probably going to need to use sessions. To do so, you can install
+     express-session:
+
+       yarn add express-session
+
+   * Learn more about Passport on https://github.com/jaredhanson/passport

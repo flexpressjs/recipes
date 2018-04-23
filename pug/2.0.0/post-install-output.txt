@@ -1,0 +1,11 @@
+
+ You just installed Pug!
+ What's next?
+
+   * A views/welcome.pug template file was created. You can tweak it as you wish!
+
+   * In your routes, you can use Pug using the res.render() function:
+
+        res.render('welcome', { title: 'Hey', message: 'Hello there!' })
+
+   * Learn more about Pug on https://pugjs.org/api/getting-started.html

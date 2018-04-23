@@ -1,0 +1,6 @@
+{
+    "copy": {
+        "config/session.js": "config/session.js",
+        "packages/session.js": "packages/session.js"
+    }
+}

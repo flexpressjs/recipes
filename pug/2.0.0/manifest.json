@@ -1,0 +1,7 @@
+{
+    "copy": {
+        "packages/pug.js": "packages/pug.js",
+        "views/welcome.pug": "views/welcome.pug"
+    },
+    "postInstallOutput": "post-install-output.txt"
+}
