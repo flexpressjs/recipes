@@ -45,6 +45,10 @@ class App {
         this._definitions[serviceName] = factory;
     }
 
+    has(serviceName) {
+        return typeof this._definitions[serviceName] !== 'undefined';
+    }
+
     get(serviceName) {
         if (typeof this._definitions[serviceName] === 'undefined') {
             throw new Error('You have requested a non-existent service "'+serviceName+'"');

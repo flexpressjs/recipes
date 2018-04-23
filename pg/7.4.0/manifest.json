@@ -1,0 +1,7 @@
+{
+    "copy": {
+        "config/pg.js": "config/pg.js",
+        "packages/pg.js": "packages/pg.js"
+    },
+    "postInstallOutput": "post-install-output.txt"
+}

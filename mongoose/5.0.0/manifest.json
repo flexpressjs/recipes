@@ -1,0 +1,8 @@
+{
+    "copy": {
+        "config/mongoose.js": "config/mongoose.js",
+        "models/.gitignore": "models/.gitignore",
+        "packages/mongoose.js": "packages/mongoose.js"
+    },
+    "postInstallOutput": "post-install-output.txt"
+}

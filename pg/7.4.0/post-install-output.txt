@@ -1,0 +1,31 @@
+
+ You just installed pg, a PostgreSQL library!
+ What's next?
+
+   * Read the documentation on https://node-postgres.com/
+
+   * Use the client directly for simple case scenarios:
+
+       const client = app.get('pg_client');
+
+       await client.connect();
+       const res = await client.query('SELECT $1::text as message', ['Hello world!'])
+       console.log(res.rows[0].message) // Hello world!
+       await client.end()
+
+   * Use pooling for more scalability and control over transactions:
+
+       const pool = app.get('pg_pool');
+
+       (async () => {
+         const client = await pool.connect()
+         try {
+           const res = await client.query('SELECT * FROM users WHERE id = $1', [1])
+           console.log(res.rows[0])
+         } finally {
+           client.release()
+         }
+       })().catch(e => console.log(e.stack))
+
+
+     Learn more about ppoling on https://node-postgres.com/features/pooling
