@@ -1,5 +1,0 @@
-{
-    "copy": {
-        "packages/pretty-error.js": "packages/pretty-error.js"
-    }
-}
