@@ -9,3 +9,18 @@
        Quit the server with CTRL-C.
 
   * Read the documentation on https://github.com/flexpressjs/flexpress
+    Remember that all the files created using Flexpress are *yours*: modify them as you whish!
+
+  * If you want to use the templating engine Pug, install it using the following command:
+
+      yarn add pug
+
+  * If you want to use the PostgreSQL database, install the library using the following command:
+
+      yarn add pg
+
+  * If you want to use the socket.io, install it using the following command:
+
+      yarn add socket.io
+
+  * Have a look at all the other recommended libraries you can use on https://flexpress.titouangalopin.com
