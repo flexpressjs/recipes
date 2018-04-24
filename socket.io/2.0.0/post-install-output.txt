@@ -2,10 +2,20 @@
  You just installed socket.io!
  What's next?
 
-  * In your index.js file or in your routes, you can use socket.io:
+  * In your index.js file or in your routes, you can use the socket.io server:
 
         app.get('io').on('connection', (socket) => {
-            // Implement your logic here
+            socket.on('foobar', (msg) => {
+                // Implement your logic here
+            });
         });
+
+  * In your view, you can use the socket.io client:
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io();
+            socket.emit('foobar', 'Hello world!');
+        </script>
 
   * Learn more about socket.io on https://socket.io/docs/.
